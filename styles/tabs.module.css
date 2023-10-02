@@ -1,0 +1,48 @@
+.tabs1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .tab1{
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: color 0.1s ease-in-out;
+  }
+  
+  .tab1:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .activeTab1 {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 2px solid #0294fe;
+    color: #0294fe;
+  }
+  
+  .tabContent1 {
+    display: none;
+    height: 0px;
+    opacity: 0;
+    transition: all 0.1s linear;
+  }
+  
+  .activeTabContent1 {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+  }
+  .heroBody {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  

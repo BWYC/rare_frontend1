@@ -1,0 +1,324 @@
+.container {
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 128px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .metadataContainer {
+    
+    display: flex;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    vertical-align: inherit;
+    display: flex;
+    max-width: 100%;
+  }
+  
+  .listingContainer {
+    
+    flex-shrink: 1;
+    position: sticky;
+    width: 100%;
+    min-width: 370px;
+    max-width: 450px;
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+  
+  .image {
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 16px;
+    width: 100% !important;
+    height: auto !important;
+    background-color: rgba(61, 47, 47, 0.541);
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 0 0 2px rgba(54, 48, 48, 0.451);
+    border-radius: 8px;
+  }
+  
+  .contractMetadataContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .imageContainer {
+    
+    position: relative;
+  }
+  
+  .crossButton {
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .crossButton:hover {
+    
+    cursor: pointer;
+    background-color: rgba(52, 42, 42, 0.8) !important;
+  }
+  
+  .collectionImage {
+    
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 8px;
+    margin-right: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .collectionName {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .title {
+    
+    font-weight: 700;
+    font-size: 32px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    margin-bottom: 4px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .nftOwnerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    gap: 8px;
+    transition: opacity 0.2s ease-in-out;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .nftOwnerContainer:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .nftOwnerImage {
+    margin-top: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  
+    opacity: 0.9;
+    border: 2px solid rgba(17, 16, 16, 0.92);
+  }
+  
+  .nftOwnerInfo {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 16px;
+  }
+  
+  .label {
+    font-weight: bold;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    margin-bottom: 4px;
+  }
+  
+  .nftOwnerAddress {
+    font-weight: 600;
+    margin: 0px;
+    color: rgba(239, 114, 11, 0.9);
+  }
+  
+  .descriptionContainer {
+    border-style: solid;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-width: 1px;
+    border-radius: 8px;
+    
+  }
+  
+  .descriptionTitle {
+    margin-top: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+  
+  .traitsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  
+  .traitContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+    border: 1px solid rgba(191, 167, 167, 0.46);
+    padding: 8px 12px;
+    min-width: 128px;
+    border-radius: 16px;
+    min-height: 32px;
+  }
+  
+  .eventsContainer {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    gap: 4px;
+    border: 1px solid rgba(240, 228, 228, 0.528);
+    padding: 8px 12px;
+    min-width: 128px;
+    border-radius: 16px;
+    min-height: 32px;
+  }
+  
+  .traitValue {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin: 0px;
+    color: rgb(255, 134, 47);
+  }
+  
+  .traitName {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    margin: 0px;
+    color: rgba(253, 98, 1, 0.93);
+  }
+  
+  .eventContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .txHashArrow {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+  }
+  
+  .pricingContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+   font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+  
+  .pricingInfo {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 16px;
+    border-radius: 14px;
+    background-color: rgba(61, 52, 52, 0.419);
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 12px;
+  }
+  
+  .pricingValue {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0px;
+    border-radius: 8px;
+  }
+  
+  .buyButton:hover {
+    cursor: pointer;
+    opacity: 0.8 !important;
+  }
+  
+  .listingTimeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
+  
+  .listingTime {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0px;
+  }
+  
+  .or {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  @media (max-width: 960px) {
+    .container {
+      flex-direction: column;
+      padding-bottom: 128px;
+    }
+  
+    .listingContainer {
+      position: relative;
+      width: 100%;
+      min-width: 0px;
+      max-width: 100%;
+      top: 0px;
+    }
+  
+    .metadataContainer {
+      margin-top: 32px;
+    }
+  }
+  
+  .btn {
+    /* fill remainin width */
+    width: 100% !important;
+  }

@@ -1,0 +1,44 @@
+.title {
+    padding: 1px;
+    font-size: 3rem;
+    margin-bottom: 8px;
+  }
+  
+  .legend {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0px;
+    margin-bottom: 8px;
+  }
+  
+  .input {
+    border-style: solid;
+    border-color: darkgoldenrod;
+    display: block;
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .formSectionTitle {
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .activeTabContent {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+  }
+.saleInfoContainer{
+  width: 100%;
+}
+.container{
+  backdrop-filter: blur(16px);
+  background-color: rgba(0, 0, 0, 0.182);
+}
